@@ -1,0 +1,286 @@
+.wrapper {
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+	/* background-color: #77608d; */
+	color: white;
+	font-family: Poppins: sans-serif;
+   
+	display: flex;
+	flex-direction: column;
+}
+
+
+.header {
+	background-color: #d5a638;
+	padding: 15px;
+}
+
+.page {
+	flex-grow: 1;
+	max-width: 1500px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.content {
+	/* max-width: 1500px;
+	padding: 0 15px;
+	margin: 0 auto; */
+}
+.footer {
+	display: flex;
+	background-color: #333333;
+	color: #a5a4a4;
+	width: 100%;
+	height: auto;
+	left: 0px;
+	top: 0px;
+}
+.wraper {
+	display: flex;
+	flex-direction: column;
+	max-width: 1500px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.column__wraper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	column-gap: 12px;
+}
+.logo {
+	display: block;
+	margin: 25px;
+}
+.title-cont {
+	margin-top: 15px;
+}
+.title {
+	display: block;
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+	font-size: 16px;
+}
+.blcol {
+font-family: "Poppins", sans-serif;
+	font-weight: 300;
+	letter-spacing: 0.5px;
+	font-size: 0.875rem;
+}
+.column__block {
+	margin: 25px 25px 19px 19px;
+	max-width: 300px;
+}
+._1col {
+	letter-spacing: 0.5px;
+	line-height: 22px;
+}
+._1col:hover {
+	color: white;
+}
+._1ax {
+	display: flex;
+	margin-top: 10px;
+}
+._1ay {
+	display: inline-block;
+	font-family: "Poppins", sans-serif;
+	letter-spacing: 0.5px;
+	font-size: 11px;
+	margin-left: 10px;
+}
+img {
+	max-width: 68%;
+	margin-bottom: 10px;
+}
+img:hover {
+	fill: #cf0202
+}
+.social__container {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	gap: 18px;
+	margin: 12px 0px 7px 0px;
+	flex-grow: 1;
+}
+/* .social__container:nth-child(1) {
+	margin-right: 15px;
+} */
+.socialblock-face {
+	margin-right: 6px;
+}
+svg:hover {
+	fill: #ca3232;
+}
+div p{
+	color: #dbdada;
+	margin-bottom: 6px;
+}
+
+.paycard-row {
+	display: flex;
+	flex-direction: row;
+	background-color: #808080;
+	justify-content: center;
+	padding: 5px 0;
+}
+.paycard-row img{
+	margin-bottom: 0px;
+	max-width: 86%;
+}
+.shop-info {
+	display: flex;
+	color: #c9c9c9;
+	font-family: "Poppins", sans-serif;
+	font-weight: 100;
+	letter-spacing: 0.5px;
+	font-size: 11px;
+	margin-left: 10px;
+	align-items: center;
+		
+}
+/* ======== Блок опис ========= */
+.sign p{
+		font-family: "Poppins", sans-serif;
+		font-weight: 100;
+		letter-spacing: 0.5px;
+		font-size: 33px;
+		color: #878787;
+		font-size: 43px;
+		text-transform: uppercase;
+		align-items: center;
+		text-align: center;
+		margin: 35px 0px;
+}
+
+/* ======== Блок лінійок ========= */
+
+.container {
+	position: relative;
+	display: inline-block;
+	z-index: 0;
+}
+
+.container:hover {
+	display: inline-block;
+	position: relative;
+	background: linear-gradient(to right, transparent 15%, #142238 71%);
+	/* -webkit-mask-image: linear-gradient(to right, transparent 25%, #142238 71%); */
+	linear-gradient(to right, transparent 25%, #142238 75%);
+	transition: opacity 0.9s ease 0s;
+	/* z-index: 49; */
+}
+
+.image {
+	display: inline-block;
+	max-width: 100%;
+	opacity: 0.77;
+	margin-bottom: 0px;
+}
+
+.logos {
+	display: inherit;
+	position: absolute;
+	max-width: 100%;
+	top: 75px;
+	left: 20px;
+	margin: 0px;
+	animation: logos 1s ease;
+	z-index: 98;
+}
+
+@keyframes logos {
+	0% {
+		transform: translate(0px,21%);
+		opacity: 0;
+	}
+	100% {
+		transform: translate(0px, 0%);
+			opacity: 1;
+	}
+}
+
+.logos::before {
+	transition: opacity 0.9s ease 0s;
+}
+.link {
+	display: inherit;
+	position: absolute;
+	font-family: "Poppins", sans-serif;
+	font-weight: 100;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	color: #ffffff;
+	font-size: 31px;
+	top: 35px;
+	left: 250px;
+	padding: 45px 17px 45px 80px;
+	opacity: 0;
+	z-index: 100;
+}  
+
+.link:hover {
+	display: inherit;
+		position: absolute;
+		font-family: "Poppins", sans-serif;
+		font-weight: 100;
+		text-transform: uppercase;
+		letter-spacing: 0.5px;
+		color: #ffffff;
+		font-size: 31px;
+		top: 35px;
+		left: 250px;
+		padding: 45px 17px 45px 80px;
+	opacity: 1;
+	transition: opacity 0.3s ease 0s;
+	z-index: 100;
+}
+
+.line-descrpt {
+		display: inherit;
+		position: absolute;
+		z-index: 4;
+}
+
+.line-descrpt p{
+	text-transform: uppercase;
+	color: #142238;
+	font-family: "Poppins", sans-serif;
+	font-size: 20px;
+	padding: 144px 20px 0px;
+}
+/* ======== Блок лінійок - перший ========= */
+/* .lines {
+	max-width: 1500px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.lines__block {
+width: 350px;
+height: 132.06px;
+overflow: hidden;
+}
+
+.lines__block img{
+max-width: 100%;
+transition: transform 172ms ease 0s;
+opacity: 0.5;
+}
+
+.lines__block:hover img{
+	transform: scale(1.03);
+	opacity: 0.75;
+}
+
+.lines__block:hover{
+	background: linear-gradient(to right, transparent 15%, #142238 75%);
+	-webkit-mask-image: linear-gradient(to right, transparent 25%, #142238 75%);
+	Маска для часткової заливки 
+	mask-image: linear-gradient(to right, transparent 25%, #142238 75%);
+	z-index: 10;
+} 
+*/
